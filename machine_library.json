@@ -1,0 +1,413 @@
+{
+  "ontology_name": "ProductionLineMachineOntology",
+  "version": "1.0.0",
+  "machines": [
+    {
+      "internal_id": "CONV-FLAT-001",
+      "category": "CONVEYOR",
+      "subtype": "Flat Belt Conveyor",
+      "unspsc": "24101700",
+      "description": "Standard flat-belt conveyor for transporting general goods.",
+      "tags": ["conveyor", "transport", "flat_belt"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CONV-ROLL-002",
+      "category": "CONVEYOR",
+      "subtype": "Roller Conveyor",
+      "unspsc": "24101700",
+      "description": "Roller-based conveyor for boxes, trays, or rigid goods.",
+      "tags": ["conveyor", "transport", "roller"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CONV-MOD-003",
+      "category": "CONVEYOR",
+      "subtype": "Modular Chain Conveyor",
+      "unspsc": "24101700",
+      "description": "Plastic chain conveyor suitable for food, packaging, and assembly.",
+      "tags": ["conveyor", "transport", "modular_chain"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CONV-COMP-004",
+      "category": "CONVEYOR",
+      "subtype": "Compression Conveyor",
+      "unspsc": "24101700",
+      "description": "Conveyor with upper pressure belt to compress glued flaps or fragile components.",
+      "tags": ["conveyor", "compression", "glue_curing"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CONV-INCL-005",
+      "category": "CONVEYOR",
+      "subtype": "Incline/Decline Conveyor",
+      "unspsc": "24101700",
+      "description": "Conveyor for elevation changes using a friction belt.",
+      "tags": ["conveyor", "incline", "decline"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CONV-ACC-006",
+      "category": "CONVEYOR",
+      "subtype": "Accumulation Conveyor",
+      "unspsc": "24101700",
+      "description": "Zero-pressure accumulation conveyor for buffering workpieces.",
+      "tags": ["conveyor", "buffer", "accumulation"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "ROB-6AX-001",
+      "category": "ROBOT",
+      "subtype": "6-Axis Industrial Robot",
+      "unspsc": "23151800",
+      "description": "General-purpose articulated robot for flexible manipulation.",
+      "tags": ["robot", "6_axis", "handling"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "ROB-SCARA-002",
+      "category": "ROBOT",
+      "subtype": "SCARA Robot",
+      "unspsc": "23151800",
+      "description": "High-speed robot for pick-and-place and assembly.",
+      "tags": ["robot", "scara", "pick_and_place"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "ROB-DELTA-003",
+      "category": "ROBOT",
+      "subtype": "Delta Robot",
+      "unspsc": "23151800",
+      "description": "Parallel robot for ultra-fast picking of lightweight items.",
+      "tags": ["robot", "delta", "high_speed"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "ROB-COBOT-004",
+      "category": "ROBOT",
+      "subtype": "Collaborative Cobot",
+      "unspsc": "23151800",
+      "description": "Human-safe robot arm for manual-machine hybrid tasks.",
+      "tags": ["robot", "cobot", "collaborative"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "ROB-GANTRY-005",
+      "category": "ROBOT",
+      "subtype": "Cartesian Gantry Robot",
+      "unspsc": "23151800",
+      "description": "XYZ gantry system for palletizing or large-area handling.",
+      "tags": ["robot", "gantry", "cartesian"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "FORM-CARTON-001",
+      "category": "FORMING",
+      "subtype": "Carton Forming Machine",
+      "unspsc": "24104103",
+      "description": "Folds flat blanks into open carton shapes.",
+      "tags": ["forming", "carton", "box"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "FORM-TRAY-002",
+      "category": "FORMING",
+      "subtype": "Tray Former",
+      "unspsc": "24104103",
+      "description": "Forms cardboard trays for food or transport.",
+      "tags": ["forming", "tray", "packaging"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "FORM-ERECTOR-003",
+      "category": "FORMING",
+      "subtype": "Box Erector",
+      "unspsc": "24104103",
+      "description": "Automatically erects and squares folded cardboard boxes.",
+      "tags": ["forming", "erector", "box"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "FORM-THERMO-004",
+      "category": "FORMING",
+      "subtype": "Thermoforming Station",
+      "unspsc": "24101500",
+      "description": "Heats and forms plastic sheets into containers or trays.",
+      "tags": ["forming", "thermoforming", "plastic"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "GLUE-COLD-001",
+      "category": "GLUEING",
+      "subtype": "Glue Applicator (Cold Glue)",
+      "unspsc": "27112900",
+      "description": "Precise cold-glue dispensing for carton flaps and paperboard.",
+      "tags": ["glueing", "cold_glue", "applicator"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "GLUE-HOTMELT-002",
+      "category": "GLUEING",
+      "subtype": "Hot-Melt Applicator",
+      "unspsc": "27112900",
+      "description": "Hot-melt adhesive system for packaging lines.",
+      "tags": ["glueing", "hotmelt", "applicator"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "GLUE-PRESS-003",
+      "category": "GLUEING",
+      "subtype": "Seal/Press Station",
+      "unspsc": "27112900",
+      "description": "Applies pressure for flap bonding after glue dispense.",
+      "tags": ["glueing", "press", "sealing"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "CUT-ROTARY-001",
+      "category": "CUTTING",
+      "subtype": "Rotary Cutter",
+      "unspsc": "23101500",
+      "description": "Rotary blade cutter for continuous web or sheet processing.",
+      "tags": ["cutting", "rotary", "web"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CUT-GUILLO-002",
+      "category": "CUTTING",
+      "subtype": "Guillotine Cutter",
+      "unspsc": "23101500",
+      "description": "High-force linear cutter for sheets or stacks.",
+      "tags": ["cutting", "guillotine", "sheet"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "CUT-DIE-003",
+      "category": "CUTTING",
+      "subtype": "Die Cutter",
+      "unspsc": "23101500",
+      "description": "Punching tool for high-volume cardboard or packaging cuts.",
+      "tags": ["cutting", "die_cut", "cardboard"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "INSP-VIS-001",
+      "category": "INSPECTION",
+      "subtype": "Vision Inspection Camera",
+      "unspsc": "41115100",
+      "description": "Optical system for detecting geometry, completeness, and flaws.",
+      "tags": ["inspection", "vision", "camera"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "INSP-LASER-002",
+      "category": "INSPECTION",
+      "subtype": "3D Profile Scanner",
+      "unspsc": "41115100",
+      "description": "Laser triangulation scanner for 3D shape measurement.",
+      "tags": ["inspection", "3d", "laser"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "INSP-WEIGHT-003",
+      "category": "INSPECTION",
+      "subtype": "Weight Checkweigher",
+      "unspsc": "41115300",
+      "description": "Dynamic weighing system for finished goods.",
+      "tags": ["inspection", "weighing", "checkweigher"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "INSP-LEAK-004",
+      "category": "INSPECTION",
+      "subtype": "Leak/Pressure Tester",
+      "unspsc": "41115800",
+      "description": "Checks sealing integrity by pressure decay or vacuum test.",
+      "tags": ["inspection", "leak_test", "pressure"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "SORT-PUSH-001",
+      "category": "SORTING",
+      "subtype": "Reject Pusher",
+      "unspsc": "24101800",
+      "description": "Pneumatic or servo pusher for rejecting bad products.",
+      "tags": ["sorting", "reject", "pusher"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "SORT-DIV-002",
+      "category": "SORTING",
+      "subtype": "Diverter Gate",
+      "unspsc": "24101800",
+      "description": "Flap gate to route products in different paths.",
+      "tags": ["sorting", "diverter", "gate"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "SORT-ROBOT-003",
+      "category": "SORTING",
+      "subtype": "Robotic Sorter",
+      "unspsc": "24101800",
+      "description": "Robot-based high-flexibility sorting system.",
+      "tags": ["sorting", "robotic", "flexible"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "FEED-BLANK-001",
+      "category": "FEEDER",
+      "subtype": "Blank Feeder",
+      "unspsc": "24101600",
+      "description": "Magazine with pickup to separate and feed flat blanks.",
+      "tags": ["feeder", "blank", "magazine"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "FEED-BOWL-002",
+      "category": "FEEDER",
+      "subtype": "Bowl Feeder",
+      "unspsc": "24101600",
+      "description": "Vibratory feeder for orientation of small parts.",
+      "tags": ["feeder", "bowl", "vibration"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "FEED-LINEAR-003",
+      "category": "FEEDER",
+      "subtype": "Linear Feeder",
+      "unspsc": "24101600",
+      "description": "Linear vibration track for part indexing.",
+      "tags": ["feeder", "linear", "vibration"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "PACK-CASE-001",
+      "category": "PACKAGING",
+      "subtype": "Case Packer",
+      "unspsc": "24102100",
+      "description": "Automatically loads products into cases or cartons.",
+      "tags": ["packaging", "case_packer", "loading"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "PACK-SHRINK-002",
+      "category": "PACKAGING",
+      "subtype": "Shrink Wrapper",
+      "unspsc": "24102100",
+      "description": "Wraps products with shrink film and heat-tunnels them.",
+      "tags": ["packaging", "shrink_wrap", "film"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "PACK-PALLET-003",
+      "category": "PACKAGING",
+      "subtype": "Pallet Wrapper",
+      "unspsc": "24102100",
+      "description": "Rotating-arm or turntable wrapping machine for pallets.",
+      "tags": ["packaging", "pallet", "wrapper"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "PACK-LABEL-004",
+      "category": "PACKAGING",
+      "subtype": "Labeling Machine",
+      "unspsc": "24102300",
+      "description": "Applies adhesive labels onto packages or boxes.",
+      "tags": ["packaging", "labeling", "labels"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "BUF-TABLE-001",
+      "category": "BUFFER",
+      "subtype": "Accumulation Table",
+      "unspsc": "24101700",
+      "description": "Circular or linear buffering area for product flow leveling.",
+      "tags": ["buffer", "accumulation", "table"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "BUF-ROTARY-002",
+      "category": "BUFFER",
+      "subtype": "Rotary Buffer Table",
+      "unspsc": "24101700",
+      "description": "Space-efficient buffer for random accumulation.",
+      "tags": ["buffer", "rotary", "table"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "BUF-PALLET-003",
+      "category": "BUFFER",
+      "subtype": "Pallet Buffer",
+      "unspsc": "24101700",
+      "description": "Buffer/queue system for palletized goods.",
+      "tags": ["buffer", "pallet", "queue"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "WORK-OP-001",
+      "category": "WORKER",
+      "subtype": "Operator Station",
+      "unspsc": "56101500",
+      "description": "HMI-equipped operator station for interaction and monitoring.",
+      "tags": ["worker", "operator", "hmi"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "WORK-BENCH-002",
+      "category": "WORKER",
+      "subtype": "Manual Assembly Bench",
+      "unspsc": "56101500",
+      "description": "Ergonomic workstation for manual assembly tasks.",
+      "tags": ["worker", "assembly", "bench"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "WORK-QC-003",
+      "category": "WORKER",
+      "subtype": "Quality Control Bench",
+      "unspsc": "56101500",
+      "description": "Dedicated area for manual sampling and inspection.",
+      "tags": ["worker", "quality", "inspection"],
+      "default_usd_asset": ""
+    },
+
+    {
+      "internal_id": "END-PALLET-001",
+      "category": "ENDLINE",
+      "subtype": "Palletizer Robot",
+      "unspsc": "24101900",
+      "description": "Stacks boxes onto pallets using a robot.",
+      "tags": ["endline", "palletizing", "robot"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "END-DEPAL-002",
+      "category": "ENDLINE",
+      "subtype": "Depalletizer",
+      "unspsc": "24101900",
+      "description": "Unloads boxes from pallets.",
+      "tags": ["endline", "depalletizing", "unloading"],
+      "default_usd_asset": ""
+    },
+    {
+      "internal_id": "END-HOOD-003",
+      "category": "ENDLINE",
+      "subtype": "Stretch Hooder",
+      "unspsc": "24102100",
+      "description": "Applies stretch hoods over pallet loads.",
+      "tags": ["endline", "hooder", "pallet"],
+      "default_usd_asset": ""
+    }
+  ]
+}

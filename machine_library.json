@@ -1,13 +1,13 @@
 {
   "ontology_name": "ProductionLineMachineOntology",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "machines": [
     {
       "internal_id": "CONV-FLAT-001",
       "category": "CONVEYOR",
       "subtype": "Flat Belt Conveyor",
       "unspsc": "24101700",
-      "description": "Standard flat-belt conveyor for transporting general goods.",
+      "description": "A flat belt conveyor uses a continuous belt driven by a motorized pulley to transport items in a straight or slightly inclined path. It is suitable for cartons, trays, and other stable goods with a flat underside. Speed and belt width can be adapted to match product size and line throughput.",
       "tags": ["conveyor", "transport", "flat_belt"],
       "default_usd_asset": ""
     },
@@ -16,7 +16,7 @@
       "category": "CONVEYOR",
       "subtype": "Roller Conveyor",
       "unspsc": "24101700",
-      "description": "Roller-based conveyor for boxes, trays, or rigid goods.",
+      "description": "A roller conveyor consists of a series of cylindrical rollers mounted in a frame, driven either by gravity or a motorized transmission. It is ideal for rigid items such as boxes and totes that can span multiple rollers. The design allows accumulation and manual intervention between rollers if needed.",
       "tags": ["conveyor", "transport", "roller"],
       "default_usd_asset": ""
     },
@@ -25,7 +25,7 @@
       "category": "CONVEYOR",
       "subtype": "Modular Chain Conveyor",
       "unspsc": "24101700",
-      "description": "Plastic chain conveyor suitable for food, packaging, and assembly.",
+      "description": "A modular chain conveyor uses interlocking plastic chain links guided along wear strips and driven by sprockets. It supports complex layouts with curves, inclines, and side transfers while maintaining product orientation. This type is commonly used in food, beverage, and packaging applications due to its cleanability and flexibility.",
       "tags": ["conveyor", "transport", "modular_chain"],
       "default_usd_asset": ""
     },
@@ -34,7 +34,7 @@
       "category": "CONVEYOR",
       "subtype": "Compression Conveyor",
       "unspsc": "24101700",
-      "description": "Conveyor with upper pressure belt to compress glued flaps or fragile components.",
+      "description": "A compression conveyor combines a lower transport belt or chain with upper pressure belts or guides to clamp products during movement. This arrangement stabilizes glued, folded, or lightly clamped items while adhesive cures or forming finishes. The compression force and dwell time are adjustable through belt tension and conveyor length.",
       "tags": ["conveyor", "compression", "glue_curing"],
       "default_usd_asset": ""
     },
@@ -43,7 +43,7 @@
       "category": "CONVEYOR",
       "subtype": "Incline/Decline Conveyor",
       "unspsc": "24101700",
-      "description": "Conveyor for elevation changes using a friction belt.",
+      "description": "An incline/decline conveyor uses a friction belt, often with cleats or sidewalls, to move products between different height levels. The design prevents items from slipping backwards while climbing or descending. It is used to bridge floor height differences or connect machines placed at different elevations.",
       "tags": ["conveyor", "incline", "decline"],
       "default_usd_asset": ""
     },
@@ -52,7 +52,7 @@
       "category": "CONVEYOR",
       "subtype": "Accumulation Conveyor",
       "unspsc": "24101700",
-      "description": "Zero-pressure accumulation conveyor for buffering workpieces.",
+      "description": "An accumulation conveyor is designed to temporarily store products on the line without causing damage or excessive back pressure. It typically uses individually controlled zones or low-friction rollers to allow items to queue while upstream or downstream equipment stops. This enables decoupling of machine cycle times and reduces unplanned stops.",
       "tags": ["conveyor", "buffer", "accumulation"],
       "default_usd_asset": ""
     },
@@ -62,7 +62,7 @@
       "category": "ROBOT",
       "subtype": "6-Axis Industrial Robot",
       "unspsc": "23151800",
-      "description": "General-purpose articulated robot for flexible manipulation.",
+      "description": "A 6-axis industrial robot is an articulated arm with six rotary joints providing full spatial freedom for complex motions. It can handle tasks such as palletizing, welding, machine tending, and assembly by following programmed paths. Payload, reach, and repeatability are selected according to application requirements.",
       "tags": ["robot", "6_axis", "handling"],
       "default_usd_asset": ""
     },
@@ -71,7 +71,7 @@
       "category": "ROBOT",
       "subtype": "SCARA Robot",
       "unspsc": "23151800",
-      "description": "High-speed robot for pick-and-place and assembly.",
+      "description": "A SCARA robot (Selective Compliance Assembly Robot Arm) has parallel rotary axes and a vertical axis for fast planar movements. It excels at high-speed pick-and-place, screwdriving, and small-part assembly operations. The structure provides rigidity in the vertical direction while allowing limited horizontal compliance for alignment.",
       "tags": ["robot", "scara", "pick_and_place"],
       "default_usd_asset": ""
     },
@@ -80,7 +80,7 @@
       "category": "ROBOT",
       "subtype": "Delta Robot",
       "unspsc": "23151800",
-      "description": "Parallel robot for ultra-fast picking of lightweight items.",
+      "description": "A delta robot uses three or four parallel arms connected to a common platform to achieve extremely high-speed movement over a work area. It is typically mounted above a conveyor for picking lightweight items such as food portions or small packages. Integrated vision systems frequently guide the robot to track moving products.",
       "tags": ["robot", "delta", "high_speed"],
       "default_usd_asset": ""
     },
@@ -89,7 +89,7 @@
       "category": "ROBOT",
       "subtype": "Collaborative Cobot",
       "unspsc": "23151800",
-      "description": "Human-safe robot arm for manual-machine hybrid tasks.",
+      "description": "A collaborative robot (cobot) is designed for safe operation near human workers through integrated force limitation, speed monitoring, and collision detection. It is used for manual assistance tasks such as light assembly, machine loading, or testing where flexibility is more important than maximum speed. Programming is usually simplified via hand-guiding or graphical interfaces.",
       "tags": ["robot", "cobot", "collaborative"],
       "default_usd_asset": ""
     },
@@ -98,7 +98,7 @@
       "category": "ROBOT",
       "subtype": "Cartesian Gantry Robot",
       "unspsc": "23151800",
-      "description": "XYZ gantry system for palletizing or large-area handling.",
+      "description": "A cartesian gantry robot consists of linear axes arranged in X, Y, and Z to move a gripper or tool over a large working envelope. It is well suited for palletizing, depalletizing, and large-format handling where overhead support is feasible. The modular axis design simplifies scaling of travel range and payload capacity.",
       "tags": ["robot", "gantry", "cartesian"],
       "default_usd_asset": ""
     },
@@ -108,7 +108,7 @@
       "category": "FORMING",
       "subtype": "Carton Forming Machine",
       "unspsc": "24104103",
-      "description": "Folds flat blanks into open carton shapes.",
+      "description": "A carton forming machine converts flat, pre-creased cardboard blanks into open carton bodies using mechanical or pneumatic formers. It typically includes folding tools, plows, and squaring mechanisms to achieve consistent geometry. Change parts or adjustable guides allow adaptation to different carton sizes and designs.",
       "tags": ["forming", "carton", "box"],
       "default_usd_asset": ""
     },
@@ -117,7 +117,7 @@
       "category": "FORMING",
       "subtype": "Tray Former",
       "unspsc": "24104103",
-      "description": "Forms cardboard trays for food or transport.",
+      "description": "A tray former is specialized for constructing shallow cardboard trays from flat blanks. It folds and secures the side walls using glue or locking tabs, creating stable transport or presentation trays. The design is often used in food packaging, produce handling, and secondary packaging lines.",
       "tags": ["forming", "tray", "packaging"],
       "default_usd_asset": ""
     },
@@ -126,7 +126,7 @@
       "category": "FORMING",
       "subtype": "Box Erector",
       "unspsc": "24104103",
-      "description": "Automatically erects and squares folded cardboard boxes.",
+      "description": "A box erector automatically opens, squares, and secures folded corrugated cases from a magazine. It normally integrates bottom flap folding and gluing or taping to deliver ready-to-fill boxes to downstream packers. Case size can be adjusted through mechanical settings or recipe-based servo positions.",
       "tags": ["forming", "erector", "box"],
       "default_usd_asset": ""
     },
@@ -135,7 +135,7 @@
       "category": "FORMING",
       "subtype": "Thermoforming Station",
       "unspsc": "24101500",
-      "description": "Heats and forms plastic sheets into containers or trays.",
+      "description": "A thermoforming station heats plastic sheets or film to forming temperature and shapes them over molds using vacuum, pressure, or mechanical means. It is commonly used for producing rigid or semi-rigid trays, blisters, and cups. Integrated cutting tools often separate individual cavities after forming.",
       "tags": ["forming", "thermoforming", "plastic"],
       "default_usd_asset": ""
     },
@@ -145,7 +145,7 @@
       "category": "GLUEING",
       "subtype": "Glue Applicator (Cold Glue)",
       "unspsc": "27112900",
-      "description": "Precise cold-glue dispensing for carton flaps and paperboard.",
+      "description": "A cold-glue applicator dispenses water-based adhesive onto defined surfaces via nozzles, wheels, or guns. It is used for carton flap bonding, paper lamination, and other porous materials where penetration and open time are important. The unit normally includes a glue reservoir, pumps, filters, and controls for volume and pattern.",
       "tags": ["glueing", "cold_glue", "applicator"],
       "default_usd_asset": ""
     },
@@ -154,7 +154,7 @@
       "category": "GLUEING",
       "subtype": "Hot-Melt Applicator",
       "unspsc": "27112900",
-      "description": "Hot-melt adhesive system for packaging lines.",
+      "description": "A hot-melt applicator melts solid adhesive pellets or blocks and pumps the liquified glue to heated hoses and guns. It provides fast-setting bonds ideal for high-speed case sealing, tray forming, and closing operations. Temperature, application pattern, and shot timing are precisely controlled to ensure consistent bonding quality.",
       "tags": ["glueing", "hotmelt", "applicator"],
       "default_usd_asset": ""
     },
@@ -163,7 +163,7 @@
       "category": "GLUEING",
       "subtype": "Seal/Press Station",
       "unspsc": "27112900",
-      "description": "Applies pressure for flap bonding after glue dispense.",
+      "description": "A seal/press station applies controlled mechanical pressure to glued joints immediately after adhesive application. It may use compression plates, belts, or rollers to maintain contact until initial curing is achieved. This station improves bond strength and dimensional stability for glued cartons or assemblies.",
       "tags": ["glueing", "press", "sealing"],
       "default_usd_asset": ""
     },
@@ -173,7 +173,7 @@
       "category": "CUTTING",
       "subtype": "Rotary Cutter",
       "unspsc": "23101500",
-      "description": "Rotary blade cutter for continuous web or sheet processing.",
+      "description": "A rotary cutter uses one or more rotating blades against an anvil or counter-roller to cut continuous webs or strips. It is suitable for paper, film, foil, and thin cardboard at high line speeds. Cutting length is often controlled by servo synchronization with the web feed or registration marks.",
       "tags": ["cutting", "rotary", "web"],
       "default_usd_asset": ""
     },
@@ -182,7 +182,7 @@
       "category": "CUTTING",
       "subtype": "Guillotine Cutter",
       "unspsc": "23101500",
-      "description": "High-force linear cutter for sheets or stacks.",
+      "description": "A guillotine cutter employs a straight blade that moves vertically to cut sheets or stacks of material against a fixed bed. It provides precise, square cuts and can handle significant thickness in a single stroke. Operators or automatic feeders position the material to defined stops before each cut.",
       "tags": ["cutting", "guillotine", "sheet"],
       "default_usd_asset": ""
     },
@@ -191,7 +191,7 @@
       "category": "CUTTING",
       "subtype": "Die Cutter",
       "unspsc": "23101500",
-      "description": "Punching tool for high-volume cardboard or packaging cuts.",
+      "description": "A die cutter uses a shaped cutting tool (die) to stamp complex outlines from sheet or web material. It is widely used in packaging to create carton blanks, labels, and gaskets with precise geometry. Depending on the design, it can also perform creasing, perforating, or embossing in the same operation.",
       "tags": ["cutting", "die_cut", "cardboard"],
       "default_usd_asset": ""
     },
@@ -201,7 +201,7 @@
       "category": "INSPECTION",
       "subtype": "Vision Inspection Camera",
       "unspsc": "41115100",
-      "description": "Optical system for detecting geometry, completeness, and flaws.",
+      "description": "A vision inspection camera system captures images of products and evaluates them using configurable image-processing algorithms. It can check for presence, position, shape, print quality, and color variations. Integrated lighting and optics are tailored to the product and line speed to ensure reliable detection.",
       "tags": ["inspection", "vision", "camera"],
       "default_usd_asset": ""
     },
@@ -210,7 +210,7 @@
       "category": "INSPECTION",
       "subtype": "3D Profile Scanner",
       "unspsc": "41115100",
-      "description": "Laser triangulation scanner for 3D shape measurement.",
+      "description": "A 3D profile scanner projects a laser line or pattern onto a product and measures the reflected light with a sensor to reconstruct the surface geometry. It generates height profiles or full 3D point clouds for dimensional inspection. The device is suitable for verifying fill levels, shape, and deformation on moving products.",
       "tags": ["inspection", "3d", "laser"],
       "default_usd_asset": ""
     },
@@ -219,7 +219,7 @@
       "category": "INSPECTION",
       "subtype": "Weight Checkweigher",
       "unspsc": "41115300",
-      "description": "Dynamic weighing system for finished goods.",
+      "description": "A weight checkweigher is an inline scale that weighs each product as it passes over a load cell conveyor. It compares measured weight to set limits and signals acceptance or rejection automatically. The system is commonly used for regulatory compliance and filling accuracy verification in food and pharmaceutical lines.",
       "tags": ["inspection", "weighing", "checkweigher"],
       "default_usd_asset": ""
     },
@@ -228,7 +228,7 @@
       "category": "INSPECTION",
       "subtype": "Leak/Pressure Tester",
       "unspsc": "41115800",
-      "description": "Checks sealing integrity by pressure decay or vacuum test.",
+      "description": "A leak or pressure tester measures pressure changes in a sealed product or cavity over a defined time interval. It detects small leaks by monitoring pressure decay, vacuum loss, or flow rate through calibrated orifices. This equipment is often used for bottles, pouches, valves, and assembled components that must remain airtight.",
       "tags": ["inspection", "leak_test", "pressure"],
       "default_usd_asset": ""
     },
@@ -238,7 +238,7 @@
       "category": "SORTING",
       "subtype": "Reject Pusher",
       "unspsc": "24101800",
-      "description": "Pneumatic or servo pusher for rejecting bad products.",
+      "description": "A reject pusher uses a pneumatic or servo-driven arm to push selected products laterally off a conveyor into a reject lane or bin. It receives trigger signals from inspection systems or upstream logic. The mechanism is compact and allows precise removal of individual items without stopping the main product flow.",
       "tags": ["sorting", "reject", "pusher"],
       "default_usd_asset": ""
     },
@@ -247,7 +247,7 @@
       "category": "SORTING",
       "subtype": "Diverter Gate",
       "unspsc": "24101800",
-      "description": "Flap gate to route products in different paths.",
+      "description": "A diverter gate is a movable flap or segment in a conveyor line that directs products to one of multiple downstream paths. It is actuated by pneumatic cylinders or servo drives based on control logic or product identification. Diverters are commonly used for multi-line distribution, buffering, or format-dependent routing.",
       "tags": ["sorting", "diverter", "gate"],
       "default_usd_asset": ""
     },
@@ -256,7 +256,7 @@
       "category": "SORTING",
       "subtype": "Robotic Sorter",
       "unspsc": "24101800",
-      "description": "Robot-based high-flexibility sorting system.",
+      "description": "A robotic sorter uses one or more robots equipped with grippers or suction cups to pick items from an infeed and place them into designated destinations. Product identity and target location are typically provided by vision systems or barcode readers. The solution offers high flexibility for mixed product streams and frequent sorting rule changes.",
       "tags": ["sorting", "robotic", "flexible"],
       "default_usd_asset": ""
     },
@@ -266,7 +266,7 @@
       "category": "FEEDER",
       "subtype": "Blank Feeder",
       "unspsc": "24101600",
-      "description": "Magazine with pickup to separate and feed flat blanks.",
+      "description": "A blank feeder stores flat carton or paperboard blanks in a stack and separates them one by one for transfer to a forming or printing station. It often uses vacuum suction cups, friction belts, or pick wheels for reliable separation. Adjustable guides support different blank formats and maintain proper alignment during pickup.",
       "tags": ["feeder", "blank", "magazine"],
       "default_usd_asset": ""
     },
@@ -275,7 +275,7 @@
       "category": "FEEDER",
       "subtype": "Bowl Feeder",
       "unspsc": "24101600",
-      "description": "Vibratory feeder for orientation of small parts.",
+      "description": "A bowl feeder consists of a vibrating, spiraled bowl that orients and feeds small bulk parts into a linear track. Part geometry and tooling inside the bowl guide items into a consistent orientation for downstream processes. It is widely used in assembly lines for screws, caps, fittings, and other small components.",
       "tags": ["feeder", "bowl", "vibration"],
       "default_usd_asset": ""
     },
@@ -284,7 +284,7 @@
       "category": "FEEDER",
       "subtype": "Linear Feeder",
       "unspsc": "24101600",
-      "description": "Linear vibration track for part indexing.",
+      "description": "A linear feeder uses controlled vibration or driven motion to transport oriented parts along a straight track from a bowl or hopper. It provides accumulation and controlled spacing before components reach pick points or assembly stations. Track length and geometry are adapted to part size and required buffer capacity.",
       "tags": ["feeder", "linear", "vibration"],
       "default_usd_asset": ""
     },
@@ -294,7 +294,7 @@
       "category": "PACKAGING",
       "subtype": "Case Packer",
       "unspsc": "24102100",
-      "description": "Automatically loads products into cases or cartons.",
+      "description": "A case packer automatically groups products and loads them into pre-erected cases or cartons according to a defined pattern. It may use robotic pickers, mechanical pushers, or drop-packing mechanisms depending on product type. Changeover features allow different pack patterns and case sizes to be handled on the same machine.",
       "tags": ["packaging", "case_packer", "loading"],
       "default_usd_asset": ""
     },
@@ -303,7 +303,7 @@
       "category": "PACKAGING",
       "subtype": "Shrink Wrapper",
       "unspsc": "24102100",
-      "description": "Wraps products with shrink film and heat-tunnels them.",
+      "description": "A shrink wrapper wraps products or multipacks with thermoplastic film and then passes them through a heat tunnel. The film shrinks tightly around the product to form a protective and transport-stable unit. Systems can handle wrapped bundles, trays, or loose items depending on infeed configuration.",
       "tags": ["packaging", "shrink_wrap", "film"],
       "default_usd_asset": ""
     },
@@ -312,7 +312,7 @@
       "category": "PACKAGING",
       "subtype": "Pallet Wrapper",
       "unspsc": "24102100",
-      "description": "Rotating-arm or turntable wrapping machine for pallets.",
+      "description": "A pallet wrapper applies stretch film around a loaded pallet using a rotating table, rotating arm, or rotating ring. It stabilizes the load for transport and protects it from dust and minor moisture. Film overlap, tension, and wrapping patterns are configurable to match load type and shipping requirements.",
       "tags": ["packaging", "pallet", "wrapper"],
       "default_usd_asset": ""
     },
@@ -321,7 +321,7 @@
       "category": "PACKAGING",
       "subtype": "Labeling Machine",
       "unspsc": "24102300",
-      "description": "Applies adhesive labels onto packages or boxes.",
+      "description": "A labeling machine dispenses and applies self-adhesive labels to products, bottles, or packages at defined positions. It may handle wrap-around, front-and-back, or top labels with automatic product detection. Integrated printers can add variable data such as batch codes, dates, and barcodes in real time.",
       "tags": ["packaging", "labeling", "labels"],
       "default_usd_asset": ""
     },
@@ -331,7 +331,7 @@
       "category": "BUFFER",
       "subtype": "Accumulation Table",
       "unspsc": "24101700",
-      "description": "Circular or linear buffering area for product flow leveling.",
+      "description": "An accumulation table provides a low-pressure area where products can temporarily collect without strict orientation control. It usually consists of a rotating or slowly moving surface with side guides that allow product recirculation. The table absorbs short-term disturbances and helps maintain continuous line operation.",
       "tags": ["buffer", "accumulation", "table"],
       "default_usd_asset": ""
     },
@@ -340,7 +340,7 @@
       "category": "BUFFER",
       "subtype": "Rotary Buffer Table",
       "unspsc": "24101700",
-      "description": "Space-efficient buffer for random accumulation.",
+      "description": "A rotary buffer table is a circular platform that accumulates products at infeed and discharges them at outfeed via controlled guides. Items can be stored temporarily while upstream or downstream machines are stopped or running at different speeds. This design is compact and often used near labeling or filling machines.",
       "tags": ["buffer", "rotary", "table"],
       "default_usd_asset": ""
     },
@@ -349,7 +349,7 @@
       "category": "BUFFER",
       "subtype": "Pallet Buffer",
       "unspsc": "24101700",
-      "description": "Buffer/queue system for palletized goods.",
+      "description": "A pallet buffer system holds multiple pallets in a queue using roller or chain conveyors and stopping devices. It allows decoupling between palletizing, storage, and shipping operations. Control logic manages indexing, release, and tracking of each pallet position within the buffer.",
       "tags": ["buffer", "pallet", "queue"],
       "default_usd_asset": ""
     },
@@ -359,7 +359,7 @@
       "category": "WORKER",
       "subtype": "Operator Station",
       "unspsc": "56101500",
-      "description": "HMI-equipped operator station for interaction and monitoring.",
+      "description": "An operator station is a defined working area equipped with an HMI, control panels, and access to the relevant machine sections. It provides the interface for starting, stopping, and monitoring the line and for acknowledging alarms. Safety-related devices such as emergency stop buttons are usually integrated.",
       "tags": ["worker", "operator", "hmi"],
       "default_usd_asset": ""
     },
@@ -368,7 +368,7 @@
       "category": "WORKER",
       "subtype": "Manual Assembly Bench",
       "unspsc": "56101500",
-      "description": "Ergonomic workstation for manual assembly tasks.",
+      "description": "A manual assembly bench is an ergonomic workstation where operators perform assembly or rework tasks that are not automated. It typically includes a work surface, lighting, tool holders, and part presentation fixtures. Height adjustment and ergonomic design support long-term operator comfort and productivity.",
       "tags": ["worker", "assembly", "bench"],
       "default_usd_asset": ""
     },
@@ -377,7 +377,7 @@
       "category": "WORKER",
       "subtype": "Quality Control Bench",
       "unspsc": "56101500",
-      "description": "Dedicated area for manual sampling and inspection.",
+      "description": "A quality control bench is a dedicated area for manual inspection, measurement, and testing of sample or suspect products. It may be equipped with gauges, test instruments, and documentation tools. Results from this station feed back into process optimization and defect analysis.",
       "tags": ["worker", "quality", "inspection"],
       "default_usd_asset": ""
     },
@@ -387,7 +387,7 @@
       "category": "ENDLINE",
       "subtype": "Palletizer Robot",
       "unspsc": "24101900",
-      "description": "Stacks boxes onto pallets using a robot.",
+      "description": "A palletizer robot automatically stacks boxes, bags, or bundles on pallets according to defined patterns. It uses grippers or vacuum tools to handle different package types and may integrate slip-sheet or layer-sheet placement. Recipe management allows fast changeover between products and pallet configurations.",
       "tags": ["endline", "palletizing", "robot"],
       "default_usd_asset": ""
     },
@@ -396,7 +396,7 @@
       "category": "ENDLINE",
       "subtype": "Depalletizer",
       "unspsc": "24101900",
-      "description": "Unloads boxes from pallets.",
+      "description": "A depalletizer removes products from pallets layer by layer or row by row and transfers them to conveyor lines. It may use sweeping mechanisms, robotic arms, or clamp devices depending on product type. The system is often combined with layer centering and top-sheet removal units for stable operation.",
       "tags": ["endline", "depalletizing", "unloading"],
       "default_usd_asset": ""
     },
@@ -405,7 +405,7 @@
       "category": "ENDLINE",
       "subtype": "Stretch Hooder",
       "unspsc": "24102100",
-      "description": "Applies stretch hoods over pallet loads.",
+      "description": "A stretch hooder applies a pre-formed elastic film hood over a loaded pallet and stretches it into place. The film provides high load stability and surface protection without requiring a rotating pallet. Hood dimensions and film thickness are selected to match pallet footprint and load height.",
       "tags": ["endline", "hooder", "pallet"],
       "default_usd_asset": ""
     }
